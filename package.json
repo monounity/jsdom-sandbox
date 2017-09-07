@@ -1,0 +1,28 @@
+{
+  "name": "jsdom-sandbox",
+  "version": "1.0.0",
+  "description": "Joining jsdom and the Node.js global environment",
+  "main": "index.js",
+  "author": "monounity",
+  "contributors": [
+    {
+      "name": "erikbarke"
+    }
+  ],
+  "keywords": [
+    "jsdom",
+    "global",
+    "unit test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monounity/jsdom-sandbox.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.4.0"
+  },
+  "dependencies": {
+    "@types/jsdom": "^11.0.2"
+  }
+}

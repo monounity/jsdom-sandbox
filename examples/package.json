@@ -1,0 +1,34 @@
+{
+  "name": "jsdom-sandbox-examples",
+  "version": "1.0.0",
+  "description": "Examples for jsdom-sandbox",
+  "author": "monounity",
+  "contributors": [
+    {
+      "name": "erikbarke"
+    }
+  ],
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test:es5": "tape tape.js",
+    "test:es6": "tape -r babel-register tape.es6",
+    "test:ts": "ts-node node_modules/tape/bin/tape tape.ts"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "@types/tape": "^4.2.30",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "jsdom": "^11.2.0",
+    "jsdom-sandbox": "../",
+    "tape": "^4.8.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }
+}
