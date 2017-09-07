@@ -47,7 +47,7 @@ For a complete list of options and features, please refer to the [jsdom](https:/
 
 ## Examples
 
-[Runnable examples](https://github.com/monounity/jsdom-sandbox/examples)
+[Runnable examples](https://github.com/monounity/jsdom-sandbox/tree/master/examples)
 
 ### ES5 + [tape](https://github.com/substack/tape)
 
