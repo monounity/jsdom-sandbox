@@ -102,4 +102,4 @@ Since `jsdom` [doesn't support](https://github.com/tmpvar/jsdom/issues/1137) `lo
 
 This software is licensed with the MIT license.
 
-© 2017 Monounity, Erik Barke
+© 2017-2018 Monounity, Erik Barke
