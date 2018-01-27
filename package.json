@@ -1,6 +1,6 @@
 {
   "name": "jsdom-sandbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Joining jsdom and the Node.js global environment",
   "main": "index.js",
   "author": "monounity",
