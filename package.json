@@ -20,9 +20,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.4.0"
+    "eslint": "^4.16.0"
   },
   "dependencies": {
-    "@types/jsdom": "^11.0.2"
+    "@types/jsdom": "^11.0.4"
   }
 }
