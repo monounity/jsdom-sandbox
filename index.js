@@ -181,7 +181,12 @@ var properties = [
     'window'
 ];
 
+var _Date = Date;
+
 exports.sandbox = function(html, options, callback) {
+
+    global.Date = _Date;
+
     var dom = new jsdom.JSDOM(html, options);
 
     if(!dom.window.localStorage && !dom.window.sessionStorage) {
