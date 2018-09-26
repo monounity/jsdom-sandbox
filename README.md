@@ -94,10 +94,6 @@ test("foo", (t) => {
 
 Please note that `jsdom-sandbox` ships with Typescript typings.
 
-## Polyfills
-
-Since `jsdom` [doesn't support](https://github.com/jsdom/jsdom/pull/2076) `localStorage` and `sessionStorage` yet, `jsdom-sandbox` provides a really simplistic polyfill with in-memory storage, supporting `getItem` and `setItem`.
-
 ## Licensing
 
 This software is licensed with the MIT license.

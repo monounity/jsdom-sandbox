@@ -189,17 +189,6 @@ exports.sandbox = function(html, options, callback) {
 
     var dom = new jsdom.JSDOM(html, options);
 
-    if(!dom.window.localStorage && !dom.window.sessionStorage) {
-        dom.window.localStorage = dom.window.sessionStorage = {
-            getItem: function (key) {
-                return this[key];
-            },
-            setItem: function (key, value) {
-                this[key] = value;
-            }
-        };
-    }
-
     global.window = dom.window;
 
     properties.forEach(function(property) {
