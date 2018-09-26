@@ -187,6 +187,8 @@ exports.sandbox = function(html, options, callback) {
 
     global.Date = _Date;
 
+    options.url = options.url || 'http://localhost/';
+
     var dom = new jsdom.JSDOM(html, options);
 
     global.window = dom.window;
