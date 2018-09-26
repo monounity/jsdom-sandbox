@@ -1,6 +1,6 @@
-var jsdom = require('jsdom');
+const jsdom = require('jsdom');
 
-var properties = [
+const properties = [
     'Attr',
     'Blob',
     'CSSImportRule',
@@ -181,19 +181,19 @@ var properties = [
     'window'
 ];
 
-var _Date = Date;
+let _Date = Date;
 
-exports.sandbox = function(html, options, callback) {
+exports.sandbox = (html, options, callback) => {
 
     global.Date = _Date;
 
     options.url = options.url || 'http://localhost/';
 
-    var dom = new jsdom.JSDOM(html, options);
+    const dom = new jsdom.JSDOM(html, options);
 
     global.window = dom.window;
 
-    properties.forEach(function(property) {
+    properties.forEach((property) => {
         global[property] = dom.window[property];
     });
 
@@ -201,7 +201,7 @@ exports.sandbox = function(html, options, callback) {
 
     dom.window.close();
 
-    properties.forEach(function(property) {
+    properties.forEach((property) => {
         delete global[property];
     });
 };
